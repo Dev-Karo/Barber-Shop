@@ -1,0 +1,183 @@
+/* Default styles for large screens (Desktop) */
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightgray;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding is included in the total width */
+}
+
+.navbar {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  width: 100%; /* Ensures the navbar takes full width */
+  box-sizing: border-box;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+section {
+  padding: 50px 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.service-box {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 15px;
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding is included in the total width */
+  position: relative;
+  bottom: 0;
+}
+
+/* Responsive Design */
+
+/* Xtra large screen 1400px and below */
+@media (max-width: 1400px) {
+  body {
+    background-color: blue;
+  }
+  header,
+  footer {
+    width: 100%; /* Ensures the header and footer take full width */
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Large screen 1200px and below */
+@media (max-width: 1200px) {
+  body {
+    background-color: purple;
+  }
+  header,
+  footer {
+    width: 100%;
+  }
+  .service-box {
+    width: 45%;
+  }
+}
+
+/* Medium screens (Tablets) 1024px and below */
+@media (max-width: 1024px) {
+  body {
+    background-color: green;
+  }
+  header,
+  footer {
+    width: 100%;
+  }
+  .container {
+    width: 90%;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .service-box {
+    width: 100%;
+  }
+}
+
+/* Small screens (Mobile) 768px and below */
+@media (max-width: 768px) {
+  body {
+    background-color: yellow;
+  }
+  header,
+  footer {
+    padding: 20px;
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar li {
+    margin-bottom: 10px;
+  }
+  .container {
+    width: 100%;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
+/* Very small screens (Mobile) 576px and below */
+@media (max-width: 576px) {
+  body {
+    background-color: lightcoral;
+  }
+  header,
+  footer {
+    padding: 15px;
+    width: 100%;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .navbar li {
+    margin-bottom: 8px;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  .service-box {
+    padding: 10px;
+    margin: 10px 0;
+  }
+}

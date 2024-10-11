@@ -1,0 +1,174 @@
+/* style for screen 320px  and up */
+/* Reset Browser recent styling */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+/* make img,video,audio to take 100% of the screen to fix horizontal scroll  */
+img,
+video,
+audio {
+  max-width: 100%;
+}
+
+/* nav */
+nav {
+  background-color: orange;
+  padding: 16px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 16px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+/* hero */
+.hero {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  padding: 12px;
+}
+.hero h1 {
+  font-size: 40px;
+  text-align: center;
+}
+.hero img {
+  border-radius: 8px;
+}
+/* sub-hero */
+.sub-hero {
+  background-color: orange;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sub-hero h2 {
+  font-size: 25px;
+  text-align: center;
+}
+.sub-hero h2 span {
+  color: white;
+}
+.sub-hero img {
+  border-radius: 8px;
+}
+/* hairstyle section */
+#hairstyle {
+  margin: 60px auto 0px auto;
+  padding: 0px 20px;
+}
+#hairstyle h2 {
+  text-align: center;
+  color: orange;
+  margin-bottom: 20px;
+}
+#hairstyle ul li {
+  margin-top: 10px;
+}
+/* price section */
+#price {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0px 20px;
+}
+#price h2 {
+  text-align: center;
+  color: orange;
+}
+#price table {
+  border-collapse: collapse;
+}
+#price table th,
+td {
+  border: 1px solid gray;
+  text-align: center;
+  padding: 8px;
+  width: 50%;
+}
+#price table tr:nth-child(even) {
+  background-color: gray;
+}
+/* media section */
+.media {
+  background-color: black;
+  padding: 60px 20px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.media h2 {
+  text-align: center;
+  color: orange;
+}
+.media h4 {
+  color: white;
+}
+/* about us section */
+.about {
+  margin-top: 60px;
+  padding: 0px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about h2 {
+  color: orange;
+}
+.about p {
+  font-size: 20px;
+}
+/* contact section */
+.contact {
+  background-color: orange;
+  margin-top: 60px;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.contact h2 {
+  color: white;
+  font-size: 40px;
+}
+.contact p {
+  text-align: center;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact form label {
+  font-size: 18px;
+}
+.contact form input,
+.contact form textarea {
+  padding: 10px 12px;
+  border: orange;
+  border-radius: 4px;
+}
+.contact form button {
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 18px;
+  padding: 10px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* media screem 576px and up */
